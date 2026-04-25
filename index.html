@@ -167,40 +167,58 @@
     transform: translate(-50%, -50%);
   }
 
-  .hero-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2px;
-    width: 100%;
-    height: 100%;
-  }
-
-  .stat-card {
-    background: rgba(255,255,255,0.04);
+  .hero-leadership {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 2rem;
-    border: 1px solid rgba(255,255,255,0.06);
-    transition: background 0.3s;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 4rem 3rem;
+    height: 100%;
   }
-  .stat-card:hover { background: rgba(255,255,255,0.07); }
-
-  .stat-num {
-    font-family: 'DM Serif Display', serif;
-    font-size: 3rem;
-    color: white;
-    line-height: 1;
-    margin-bottom: 0.4rem;
-  }
-
-  .stat-num span { color: var(--accent); }
-
-  .stat-label {
-    font-size: 0.72rem;
-    letter-spacing: 0.12em;
+  .leadership-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.4);
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+  }
+  .leadership-pillar {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .leadership-pillar:last-of-type { border-bottom: none; padding-bottom: 0; }
+  .pillar-icon {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    padding-top: 0.2rem;
+    flex-shrink: 0;
+    width: 22px;
+  }
+  .pillar-title {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 0.3rem;
+  }
+  .pillar-desc {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.42);
+    line-height: 1.65;
+  }
+  .leadership-quote {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.28);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 1.2rem;
+    line-height: 1.5;
   }
 
   /* SECTIONS */
@@ -534,30 +552,44 @@
   <div class="hero-left">
     <span class="hero-tag">AI & Digital Transformation Leader</span>
     <h1 class="hero-name">Jibin<br><em>G. John</em></h1>
-    <p class="hero-desc">12+ years deploying production-grade AI — from shop-floor vision systems to enterprise GenAI architecture. IIT Madras alumnus. Published researcher.</p>
+    <p class="hero-desc">I lead organisations through AI transformation — setting strategy, building governance, and shipping production systems. 12+ years across enterprise and industrial AI. IIT Madras. Published researcher.</p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-fill">View Case Studies</a>
       <a href="#contact" class="btn">Get in Touch</a>
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-stats">
-      <div class="stat-card">
-        <div class="stat-num">12<span>+</span></div>
-        <div class="stat-label">Years in Production AI</div>
+    <div class="hero-leadership">
+      <div class="leadership-eyebrow">What I bring to leadership roles</div>
+      <div class="leadership-pillar">
+        <div class="pillar-icon">01</div>
+        <div>
+          <div class="pillar-title">Strategy to Execution</div>
+          <div class="pillar-desc">Work directly with CXOs to translate AI ambition into shipped programmes — spanning Sales, Finance, Factory, and IT. No strategy decks that gather dust.</div>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">50<span>%</span></div>
-        <div class="stat-label">Throughput Increase</div>
+      <div class="leadership-pillar">
+        <div class="pillar-icon">02</div>
+        <div>
+          <div class="pillar-title">Governance &amp; Risk</div>
+          <div class="pillar-desc">Authored and drove enterprise-wide AI policy across Cybersecurity, IT, and Networking leadership — eliminating shadow-AI risk at org scale.</div>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">1<span>mo</span></div>
-        <div class="stat-label">Vision System Payback</div>
+      <div class="leadership-pillar">
+        <div class="pillar-icon">03</div>
+        <div>
+          <div class="pillar-title">Cross-functional Influence</div>
+          <div class="pillar-desc">Led transformation programmes across 6+ departments — aligning stakeholders from shop-floor operators to Directors on a unified AI roadmap.</div>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">20<span>+</span></div>
-        <div class="stat-label">Hrs/Month Automated</div>
+      <div class="leadership-pillar">
+        <div class="pillar-icon">04</div>
+        <div>
+          <div class="pillar-title">Technical Depth That Earns Trust</div>
+          <div class="pillar-desc">IIT Madras research background + hands-on production deployment. Can lead engineers credibly and translate complexity for the boardroom — without a translator.</div>
+        </div>
       </div>
+      <div class="leadership-quote">"The bridge between AI strategy and factory floor reality."</div>
     </div>
   </div>
 </section>
@@ -565,7 +597,7 @@
 <!-- ABOUT -->
 <section class="about" id="about">
   <span class="section-tag">Background</span>
-  <h2 class="section-title">AI that ships<br>to production.</h2>
+  <h2 class="section-title">Leading AI from<br><em style="font-style:italic;color:var(--accent)">boardroom to factory.</em></h2>
   <div class="about-grid">
     <div class="about-text">
       <p>I build AI systems that work in the real world — not demos. My work spans enterprise GenAI architecture, industrial computer vision, agentic automation, and predictive analytics, deployed across manufacturing shop floors and corporate functions alike.</p>
@@ -596,7 +628,7 @@
 <!-- EXPERIENCE -->
 <section class="experience" id="experience">
   <span class="section-tag">Career</span>
-  <h2 class="section-title">Where I've<br>shipped AI.</h2>
+  <h2 class="section-title">Leadership<br><em style="font-style:italic;color:var(--accent)">track record.</em></h2>
   <div class="exp-timeline">
 
     <div class="exp-item">
@@ -825,7 +857,7 @@
 <section class="contact" id="contact">
   <span class="section-tag" style="color: rgba(200,90,30,0.8);">Get in Touch</span>
   <h2 class="section-title">Let's build<br>something real.</h2>
-  <p class="contact-sub">Open to senior AI leadership, Head of AI, and digital transformation roles.</p>
+  <p class="contact-sub">Targeting <strong style="color:white">Head of AI</strong>, <strong style="color:white">Chief AI Officer</strong>, and <strong style="color:white">VP Digital Transformation</strong> roles.</p>
   <div class="contact-links">
     <a href="mailto:jibingjohn@live.com" class="btn">✉ jibingjohn@live.com</a>
     <a href="tel:+917358323923" class="btn">✆ +91 73583 23923</a>
